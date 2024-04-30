@@ -4,6 +4,7 @@
   text-decoration: none;
   font-family: portfont;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: #ffffff00;
 }
 
 body {
