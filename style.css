@@ -22,7 +22,7 @@ body {
   height: 60px;
   position: fixed;
   top: 0;
-  background-color: #00649398;
+  background-color: #cecececc;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   transition: 0.5s;
@@ -30,33 +30,33 @@ body {
 
 .header:hover {
   .logo {
-    color: #e8f1f2;
+    color: #13203d;
   }
 
   .topbar {
-    color: #e8f1f2;
+    color: #13203d;
   }
 
   .topbar svg{
-    fill: #e8f1f2;
+    fill: #13203d;
     background-color: #ffffff00;
   }
 
   .button {
-    color: #e8f1f2;
+    color: #13203d;
   }
 
   .hireme {
-    border: 2px solid #e8f1f2;
+    border: 2px solid #13203d;
     background-color: #00649300;
   }
 
-  background-color: #00649398;
+  background-color: #cecececc;
   transition: 0.5s;
 }
 
 a {
-  color: #e8f1f2;
+  color: #13203d;
   transition: 0.25s;
 }
 
@@ -67,9 +67,9 @@ a:hover {
 }
 
 .logo {
-  color: #e8f1f2;
+  color: #13203d;
   margin: 5px;
-  font-weight: 400;
+  font-weight: 700;
   font-size: x-large;
 }
 
@@ -122,7 +122,7 @@ main {
   height: 30px;
   width: 100px;
   border-radius: 20px;
-  border: 2px solid #e8f1f2;
+  border: 2px solid #13203d;
   background-color: #ffffff00;
 }
 
@@ -264,7 +264,7 @@ main {
   width: 500px;
   z-index: 999;
   display: none;
-  background-color: #e8f1f298;
+  background-color: #cecececc;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   flex-direction: column;
@@ -282,7 +282,7 @@ main {
 
 .topbar svg{
   margin-top: 5px;
-  fill: #e8f1f2;
+  fill: #13203d;
 }
 
 @media screen and (max-width: 1200px) {
@@ -370,7 +370,7 @@ main {
     width: 50%;
     /* margin-top: 60px; */
     right: -100%;
-    transition: 0.3s;
+    transition: 0.5s;
   }
   .menubutton{
     display: block;
