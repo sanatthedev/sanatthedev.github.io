@@ -7,19 +7,19 @@
   -webkit-tap-highlight-color: #ffffff00;
 }
 
-body {
-  background-color: #e8f1f2;
+main{
+  background: linear-gradient(to bottom, #5f6874, #888e96, #b5babd, #D2D4C8, #E0E2DB );
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 3vw;
+  padding-right: 3vw;
   box-sizing: border-box;
-  width: 100%;
-  height: 60px;
+  width: 100vw;
+  height: 4.76vh;
   position: fixed;
   top: 0;
   background-color: #cecececc;
@@ -47,7 +47,8 @@ body {
   }
 
   .hireme {
-    border: 2px solid #13203d;
+    color: #13203d;
+    border: 0.12vw solid #13203d;
     background-color: #00649300;
   }
 
@@ -56,6 +57,7 @@ body {
 }
 
 a {
+  /* font-size: 2.5vw; */
   color: #13203d;
   transition: 0.25s;
 }
@@ -66,31 +68,42 @@ a:hover {
   transition: 0.25s;
 }
 
-.logo {
+#logo {
   color: #13203d;
-  margin: 5px;
+  /* margin-right: 15vw; */
   font-weight: 700;
-  font-size: x-large;
+  font-size: 2vw;
 }
 
 .topbar {
-  padding: 20px;
+  font-size: 1.3vw;
+  padding: 1vw;
   font-weight: 500;
 }
 
 .navbar{
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.wave {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 7vw;
+}
+
+#wave-effect{
+  height: 10vh;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-main {
-  background-color: #e8f1f2;
-}
-
-.salute {
+.salute{
   font-weight: 900;
-  font-size: 30px;
+  font-size: 3vw;
 }
 
 .section0 {
@@ -98,11 +111,13 @@ main {
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #e8f1f2;
+  justify-content: center;
+  color: #00000096;
+  /* background-color: #e8f1f2; */
 }
 
 .spec {
-  font-size: 20px;
+  font-size: 1.33vw;
   font-weight: 500;
   /* color: #13293d; */
   color: #13203d;
@@ -111,16 +126,18 @@ main {
 }
 
 .welcome {
-  width: 50%;
-  padding: 10px;
+  width: 100vw;
+  padding: 0.6vw;
   /* padding-top: 275px; */
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .hireme {
-  height: 30px;
-  width: 100px;
+  height: 3vh;
+  width: 8vw;
   border-radius: 20px;
   border: 2px solid #13203d;
   background-color: #ffffff00;
@@ -132,7 +149,8 @@ main {
 }
 
 .button {
-  color: #e8f1f2
+  font-size: 1vw;
+  color: #13203d;
   font-weight: 500;
   border: 4px;
   transition: 0.25s;
@@ -140,115 +158,124 @@ main {
 
 .section1 {
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   align-items: center;
-  background-color: lightcoral;
+  justify-content: center;
+  /* background-color: lightcoral; */
 }
 
 .newbie {
-  width: 100%;
-  padding: 10px;
+  margin-left: 5vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  /* padding: 10px; */
 }
 
 .section2 {
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   align-items: center;
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
 }
 
 .image {
   width: 50%;
-  padding: 10px;
+  padding: 1.2vw;
 }
 
-#image1{
-  width: 700px;
-  margin-left: 50px;
-}
 #image2{
-  width: 500px;
+  width: 40vw;
 }
 #image3{
-  width: 800px;
+  width: 40vw;
+  margin-right: 10vw;
 }
 #image4{
-  width: 500px;
+  margin-left: 5vw;
+  width: 35vw;
 }
 
 .degreeintro {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
   width: 100%;
-  padding: 10px;
+  /* padding: 10px; */
+  margin-right: 5vw;
 }
 
 .section3 {
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   align-items: center;
-  background-color: #daeaff;
+  /* background-color: #daeaff; */
 }
 
 .blenderintro {
-  width: 50%;
-  padding: 10px;
+  width: 100vw;
+  /* padding: 10px; */
+  margin-left: 5vw;
 }
 
-.footer {
-  a{
-    color: #13203d;
-  }
-  display: flex;
-  height: 200px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  background-color: #e8f1f2;
-}
+/* contact details */
 
-.social {
-  align-items: center;
-}
-
-#social {
+.footer{
+  height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.socialicon {
-  margin: 10px;
+.leftsection{
+  margin: 5vw;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
 }
 
-.phone {
+.social{
+  width: 18vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .rightsection{
+  margin: 10vw;
+  width: 50vw;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+} */
+
+.mail{
+  margin: 5vw;
+  height: 15vw;
+  width: 25vw;
+  background-color: #00000015;
+  border-radius: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.contacticon {
-  margin: 10px;
-}
-
-.bottomline {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 55px;
-  background-color: #e8f1f2;
-}
-
-.phmail {
-  transition: 0.25s;
-}
-
-.contact{
-  margin-left: 150px;
-}
-
-.phmail:hover {
-  font-weight: 700;
-  transition: 0.25s;
+.phone{
+  margin: 5vw;
+  height: 15vw;
+  width: 25vw;
+  background-color: #00000015;
+  border-radius: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar{
@@ -285,102 +312,108 @@ main {
   fill: #13203d;
 }
 
-@media screen and (max-width: 1200px) {
-  .section0 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    width: 100%;
+@media  screen and (max-width:1200px) {
+  
+  .header {
+    height: 10vh;
   }
+
+  a {
+    font-size: 1.8vh;
+  }
+
+  .hireme {
+    height: 3.2vh;
+    width: 12vw;
+  }
+
+  .button {
+    font-size: 1.8vw;
+  }
+
+  .navbar {
+    margin-left: 10vw;
+  }
+
+  #logo {
+    font-size: 3vw;
+    margin-right: 10vw;
+  }
+
+  .topbar{
+    font-size: 2vw;
+  }
+
+  .wave-effect {
+    width: 80vw;
+  }
+
+  .wave {
+    font-size: 8vw;
+  }
+
+  .spec {
+    font-size: 2vw;
+  }
+
   .section1 {
+    height: 100vh;
     flex-direction: column-reverse;
-    justify-content: center;
+    /* justify-content: center; */
+  }
+
+  .newbie{
+    margin: 0vw;
     align-items: center;
-    transition: 0.5s;
-    width: 100%;
-  }
-  .section2 {
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    transition: 0.5s;
+  }
+
+  .image {
     width: 100%;
-  }
-  .section3 {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    width: 100%;
-  }
-  #image1 {
-    width: 350px;
-    margin: 0;
-  }
-  #image2 {
-    width: 350px;
-  }
-  #image3 {
-    width: 350px;
-  }
-  #image4 {
-    width: 300px;
-  }
-  .image{
-    width: 100%;
-  }
-  .footer{
-    height: auto;
-    padding: 20px;
-    flex-direction: column;
-    align-items: baseline;
-    padding-bottom: 80px;
-  }
-  .hideonmobile{
-    display: none;
-  }
-  .hireme{
-    display: none;
-  }
-  .header{
-    /* flex-direction: row-reverse; */
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-  }
-  .bottomline{
-    font-size: 20px;
-    padding-left: 30px;
-  }
-  .blenderintro {
-    width: 90%;
-  }
-  .degreeintro {
-    width: 95%;
-  }
-  .newbie {
-    width: 95%;
-  }
-  .welcome {
-    width: 95%;
-  }
-  .sidebar{
     display: flex;
-    width: 50%;
-    /* margin-top: 60px; */
-    right: -100%;
-    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
   }
-  .menubutton{
-    display: block;
+
+  #image2{
+    width: 70vw;
   }
-  .contact{
-    margin: 0;
+
+  .section2{
+    height: 100vh;
+    flex-direction: column;
   }
-}
-@media screen and (max-width: 375px) {
-  .logo{
-    font-size: 22px;
+
+  .degreeintro {
+    align-items: center;
+  }
+
+  #image3{
+    margin: 0vw;
+    width: 70vw;
+  }
+
+  .section3{
+    height: 100vh;
+    flex-direction: column-reverse;
+  }
+
+  .blenderintro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #image4{
+    margin: 0vw;
+    width: 70vw;
+  }
+
+  .footer{
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
