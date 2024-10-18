@@ -1,147 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Sanat's Portfolio</title>
-    <style>
-      @font-face {
-        font-family: portfont;
-        src: url(Montserrat-VariableFont_wght.ttf);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="sidebar">
-      <a onclick="hidesidebar()" class="hidden-sidebar crossbutton" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
-      <a class="hidden-sidebar" href="#">Home</a>
-      <a class="hidden-sidebar" href="#">Services</a>
-      <a class="hidden-sidebar" href="#">Blender 3D</a>
-      <a href="#" class="hidden-sidebar">Hire Me</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <title>Sanat's Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+  </style>
+  <style>
+    @font-face {
+      font-family: portfont;
+      src: url(Montserrat-VariableFont_wght.ttf);
+    }
+  </style>
+</head>
+<body>
+<main id="scrollcontainer" data-scroll data-scroll-speed="5">
+  <div class="sidebar">
+    <a onclick="hidesidebar()" class="hidden-sidebar crossbutton" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+        height="28" viewBox="0 -960 960 960" width="30">
+        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+      </svg></a>
+    <a class="hidden-sidebar" href="#">Home</a>
+    <a class="hidden-sidebar" href="#">Services</a>
+    <a class="hidden-sidebar" href="#">Blender 3D</a>
+    <a href="#" class="hidden-sidebar">Hire Me</a>
+  </div>
+  <header>
+    <div class="header">
+      <div class="logo" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">
+        <a id="logo" href="#">Sanat Kumar Shukla</a>
+      </div>
+      <div class="navbar" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
+        <a class="topbar hideonmobile" href="#">Services</a>
+        <a class="topbar hideonmobile" href="#">Blender 3D</a>
+        <a class="topbar hideonmobile" href="#">Home</a>
+        <!-- <a class="topbar" href="#">Contact Us</a> -->
+        <button class="hireme"><a class="button" href="#">HIRE ME</a></button>
+        <a onclick="showsidebar()" class="topbar menubutton" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+            height="30" viewBox="0 -960 960 960" width="30">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg></a>
+      </div>
     </div>
-    <header>
-      <div class="header">
-        <div class="logo">
-          <a class="logo" href="#">Sanat Kumar Shukla</a>
-        </div>
-        <div class="navbar">
-          <a class="topbar hideonmobile" href="#">Services</a>
-          <a class="topbar hideonmobile" href="#">Blender 3D</a>
-          <a class="topbar hideonmobile" href="#">Home</a>
-          <!-- <a class="topbar" href="#">Contact Us</a> -->
-          <button class="hireme"><a class="button" href="#">HIRE ME</a></button>
-          <a onclick="showsidebar()" class="topbar menubutton" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
-        </div>
-      </div>
-    </header>
-    <main>
-      <center>
-        <div class="section0">
-          <div class="image"><img id="image1" src="work.png" alt="" /></div>
-          <div class="welcome">
-            <h1 class="salute">Hola! I am Sanat.</h1>
-            <h3 class="spec">An Enthusiastic and creative web developer</h3>
-            <h3 class="spec">As well as a beginner Blender Artist.</h3>
-            <br />
-            <h1 class="salute">Based in Bharat.🇮🇳</h1>
+  </header>
+    <!-- <center> -->
+      <div class="section0">
+        <!-- <div class="image"><img id="image1" src="author.jpg" alt="" /></div> -->
+        <div class="welcome">
+          <div id="wave-effect">
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.13">H</span>
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.11">O</span>
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.10">L</span>
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.1">A</span>
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.19">!&nbsp;</span>
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.09">I&nbsp;</span>
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.08">A</span>
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.08">M&nbsp;</span>
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.08">S</span>
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.07">A</span>
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.07">N</span>
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.06">A</span>
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.05">T</span>
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.045">.</span>
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.04">.</span>
+            <span class="wave" data-scroll data-scroll-speed="8" data-scroll-delay="0.035">.</span>
           </div>
-        </div>
-        <!-- <hr /> -->
-        <div class="section1">
-          <div class="newbie">
-            <h1 class="salute">I am a Novice.</h1>
-            <h3 class="spec">
-              Just here seeking some attention to get my first ever Gig.
-            </h3>
-            <h3 class="spec">
-              "No Experience" should never be compared with "Unsatisfactory
-              Work".
-            </h3>
-            <h3 class="spec">YOU CAN TEST ME!!</h3>
-          </div>
-          <div class="image">
-            <img id="image2" src="manworking.png" alt=""  />
-          </div>
-        </div>
-        <!-- <hr> -->
-        <div class="section2">
-          <div class="image">
-            <img id="image3" src="lineman.png" alt="" />
-          </div>
-          <div class="degreeintro">
-            <h1 class="salute">I am An Engineer.</h1>
-            <h3 class="spec">
-              Currently persuing my Bachelors in Electrical Engineering
-            </h3>
-            <h3 class="spec">And providing services to people in need.</h3>
-          </div>
-        </div>
-        <!-- <hr> -->
-        <div class="section3">
-          <div class="blenderintro">
-            <h1 class="salute">I am solely interested in 3D arts.</h1>
-            <h3 class="spec">
-              Being a beginner blender artist helps me a lot to know about
-              animations and digital modelling.
-            </h3>
-            <h3 class="spec">
-              To know more about my artworks click on above mentioned "Blender
-              3D" tab.
-            </h3>
-          </div>
-          <div class="image">
-            <img id="image4" src="Blender.png" alt="" />
-          </div>
-        </div>
-      </center>
-    </main>
-    <footer>
-      <h1 class="bottomline">
-        Feel free to contact me at the given contact details.
-      </h1>
-      <div class="footer">
-        <div class="social">
-          <div id="social">
-            <img class="socialicon" src="linkedin.png" alt="" width="20px">
-            <a href="https://www.linkedin.com/in/sanatshukla?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjPx38Od5T9eMaxbbdIRR9A%3D%3D" target="_blank">Linkedin</a>
-          </div>
-          <div id="social">
-            <img class="socialicon" src="instagram.png" alt="" width="20px">
-            <a href="https://www.instagram.com/_sanatshukla_/" target="_blank">Instagram</a>
-          </div>
-          <div id="social">
-            <img class="socialicon" src="twitter.png" alt="" width="20px">
-            <a href="https://twitter.com/SANAT100105" target="_blank">X</a>
-          </div>
-          <div id="social">
-            <img class="socialicon" src="facebook.png" alt="" width="20px">
-            <a href="https://www.facebook.com/sanatshukla05" target="_blank">facebook</a>
-          </div>
-        </div>
-        <div class="contact">         
-            <div class="phone">
-              <img class="contacticon" src="call.png" alt="" width="20px">
-              <p class="phmail">+91 97136 34301</p>
-            </div>
-            <div class="phone">
-              <img class="contacticon" src="gmail.png" alt="" width="20px">
-              <p class="phmail">sanat100105@gmail.com</p>
-            </div>
+          <h3 class="spec">An Enthusiastic and creative web developer</h3>
+          <h3 class="spec">As well as a beginner Blender Artist.</h3>
+          <br />
+          <!-- <h1 class="salute">Based in Bharat</h1> -->
         </div>
       </div>
-    </footer>
-    <script>
-      function showsidebar(){
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.right = '0'
-        // sidebar.style.display = 'flex'
-      }
-      function hidesidebar(){
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.right = '-100%'
-        // sidebar.style.display = 'none'
-      }
-    </script>
-  </body>
+      <!-- </center> -->
+      <!-- <hr /> -->
+      <div class="section1">
+        <div class="newbie" data-scroll data-scroll-speed="4" data-scroll-direction="vertical">
+          <h1 class="salute">Novice...</h1>
+          <br>
+          <h3 class="spec">
+            <!-- Just here seeking some attention to get my first ever Gig. -->
+            While I may not have formal experience in these fields just yet,
+          </h3>
+          <br>
+          <h3 class="spec">
+            I have been dedicating significant time and effort
+          </h3>
+          <h3 class="spec">to honing my skills and expanding my knowledge.</h3>
+          <br>
+          <h3 class="spec">
+            Thank you for considering my abilities.
+          </h3>
+          <h3 class="spec">I’m looking forward to the opportunity to demonstrate what I can do.</h3>
+        </div>
+        <div class="image" data-scroll data-scroll-speed="8" data-scroll-direction="vertical">
+          <img id="image2" src="working.png" alt="" />
+        </div>
+      </div>
+      <!-- <hr> -->
+      <div class="section2">
+        <div class="image" data-scroll data-scroll-speed="8" data-scroll-direction="vertical">
+          <img id="image3" src="electrical.png" alt="" />
+        </div>
+        <div class="degreeintro" data-scroll data-scroll-speed="4" data-scroll-direction="vertical">
+          <h1 class="salute">Electrical Engineering Bachelor...</h1>
+          <br>
+          <h3 class="spec">My background in electrical engineering has provided me</h3>
+          <h3 class="spec">with a solid foundation in problem-solving and technical skills,</h3>
+          <br>
+          <h3 class="spec">which I believe complement my creative endeavors</h3>
+          <h3 class="spec">in Blender and web development.</h3>
+          <br>
+          <h3 class="spec">I am confident that my dedication and enthusiasm for these fields,</h3>
+          <h3 class="spec">combined with my engineering education,</h3>
+          <h3 class="spec"> will enable me to deliver high-quality work.</h3>
+        </div>
+      </div>
+      <!-- <hr> -->
+      <div class="section3">
+        <div class="blenderintro" data-scroll data-scroll-speed="4" data-scroll-direction="vertical">
+          <h1 class="salute">Solely interested in 3D arts...</h1>
+          <br>
+          <h3 class="spec">
+            In Blender, I’ve been working on various projects
+          </h3>
+          <h3 class="spec">
+            to understand the nuances of 3D modeling, animation, and rendering.
+          </h3>
+          <br>
+          <h3 class="spec">
+            Each project has been a learning experience,
+          </h3>
+          <h3 class="spec">
+            helping me to improve my techniques and creativity.
+          </h3>
+        </div>
+        <div class="image" data-scroll data-scroll-speed="8" data-scroll-direction="vertical">
+          <img id="image4" src="Blender.png" alt="" />
+        </div>
+      </div>
+    <!-- </center> -->
+  <div class="footer">
+    <div class="leftsection">
+      <h1 class="salute">Get in Touch...</h1>
+      <br>
+      <br>
+      <h3 class="spec">I'm always excited to discuss new projects, creative ideas, or opportunities to be part of your vision. Whether you have a question, want to collaborate, or need a custom 3D model, animation, or visual effect, feel free to reach out!</h3>
+      <br>
+      <br>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/sanatshukla/"><img src="linkedin.png" alt="" width="50vw"></a>
+        <a href="https://www.instagram.com/_sanatshukla_/"><img src="instagram.png" alt="" width="50vw"></a>
+        <a href="https://twitter.com/SANAT100105"><img src="twitter.png" alt="" width="50vw"></a>
+        <a href="https://www.facebook.com/sanatshukla05"><img src="facebook.png" alt="" width="50vw"></a>
+      </div>
+    </div>
+    <!-- <div class="rightsection"> -->
+      <div class="mail" data-scroll data-scroll-speed="6" data-scroll-direction="vertical">
+        <img src="email.png" alt="" width="70vw">
+        <br>
+        <a href="mailto:sanat100105@gmail.com" id="mail">sanat100105@gmail.com</a>
+      </div>
+      <div class="phone" data-scroll data-scroll-speed="6" data-scroll-direction="vertical">
+        <img src="phone-call.png" alt="" width="70vw">
+        <br>
+        <a href="" id="phone">+91-9713634301</a>
+      </div>
+    </div>
+  </div>
+</main>
+  <script>
+    function showsidebar() {
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.right = '0'
+      // sidebar.style.display = 'flex'
+    }
+    function hidesidebar() {
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.right = '-100%'
+      // sidebar.style.display = 'none'
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script>
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector("#scrollcontainer"),
+      smooth: true,
+      lerp: 0.09,
+    });
+  </script>
+</body>
 </html>
